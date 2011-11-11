@@ -1,0 +1,17 @@
+Shotgun change sync daemon
+
+Largely copied from P4 example change review daemon from here:
+ http://public.perforce.com/wiki/P4Review
+
+If run directly with the <repeat> configuration variable = 1, the script
+will sleep for "sleeptime" seconds and then run again.  On UNIX you can
+run the script from cron by setting <repeat> = 0 and adding the following
+line to the cron table with "crontab -e:"
+
+       * * * * * /path/to/shotgun_revision_create.py
+
+This will run the script every minute.  Note that if you use cron you
+should be sure that the script will complete within the time allotted.
+
+The CONFIGURATION VARIABLES below should be examined and in some
+cases changed.
