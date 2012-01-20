@@ -13,5 +13,5 @@ line to the cron table with "crontab -e:"
 This will run the script every minute.  Note that if you use cron you
 should be sure that the script will complete within the time allotted.
 
-The CONFIGURATION VARIABLES below should be examined and in some
+The CONFIGURATION VARIABLES in the script should be examined and in some
 cases changed.
